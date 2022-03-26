@@ -12,7 +12,7 @@ A suite of developer tools to help you develop, build, test, and update your cod
 
 Note: AngularJS is the verion 1 of Angular, Angular with Above Version 1 is Just Angular
 
-The Angular Features are
+The Angular Features can be Categorized : - CROSS PLATFORM, SPEED AND PERFORMANCE, PRODUCTIVITY, FULL DEVELOPMENT STORY 
 
 1. Progressive Web Apps
 Use modern web platform capabilities to deliver app-like experiences. High performance, offline, and zero-step installation.
@@ -52,6 +52,12 @@ Create high-performance, complex choreographies and animation timelines with ver
 
 12. Accessibility
 Create accessible applications with ARIA-enabled components, developer guides, and built-in a11y test infrastructure.
+
+So We will be Looking Every features As we go on.
+
+
+
+
 
 
 # Follow the Below Steps

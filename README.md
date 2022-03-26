@@ -1,6 +1,17 @@
 # Angularfeatures
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+<p align="center">
+<a  target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="320" alt="Coder Logo" /></a>
+</p>
+
+Angular is a development platform, built on TypeScript. As a platform, Angular includes:
+
+A component-based framework for building scalable web applications
+A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more
+A suite of developer tools to help you develop, build, test, and update your code
+
+Note: AngularJS is the verion 1 of Angular, Angular with Above Version 1 is Just Angular
+
 
 ## Development server
 

@@ -39,6 +39,8 @@ Quickly create UI views with simple and powerful template syntax.
 
 8. Angular CLI
 Command line tools: start building fast, add components and tests, then instantly deploy.
+    1.  `ng g c <component_name>` Command for Adding Component
+    2. 
 
 9. IDEs
 Get intelligent code completion, instant errors, and other feedback in popular editors and IDEs.
@@ -53,7 +55,9 @@ Create high-performance, complex choreographies and animation timelines with ver
 12. Accessibility
 Create accessible applications with ARIA-enabled components, developer guides, and built-in a11y test infrastructure.
 
-So We will be Looking Every features As we go on.
+So We will be Looking These features and Learn as we go  we go on.
+1. Create Custom (User) Component and add it in the User Module 
+1. 
 
 
 

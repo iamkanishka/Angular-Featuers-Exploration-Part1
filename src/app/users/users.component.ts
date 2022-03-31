@@ -34,6 +34,7 @@ export class UsersComponent implements OnInit {
   userCreatedStatus: String = 'No User is Created'
   userNameForOneWay = ''
   userNameForTwoWay = 'Kanshka Naik'
+  isUserCreated :Boolean = false
 
 
   //Whenever the Component is Called the Constructor is Called
@@ -51,6 +52,7 @@ export class UsersComponent implements OnInit {
   }
 
   changeUserCreatedStatusChange() {
+    this.isUserCreated= true
     this.userCreatedStatus = 'User Created'
   }
 

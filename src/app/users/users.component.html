@@ -18,30 +18,56 @@
 
 <!-- Event binding -->
 <!-- After Event Click The Status Will Change -->
+
+
 {{userCreatedStatus}}
+<div *ngIf="isUserCreated" >User is Created and the Username is {{userNameForOneWay}}</div>
 
 <br><br>//////////////////////////////////////////////////////////////<br><br><br>
 
 
 
 
-<h2>One way Binding in the Form</h2>
+<h4>One way Binding in the Form</h4>
 <!-- Send Data from the Event Binding using $event Reserved word -->
 <!-- Note:- For Evey Event Change the Angular Sends special variable called "$event" which has the event triggered by the User -->
 <div class="my-2">
     <label for="userNameForOneWay"> User Name</label>
     <input type="text" class="form-control" (input)="onAddofUser($event)">
 </div>
-<div>User Name: {{userNameForOneWay}}</div>
-<!-- <button class="btn btn-primary" 
+<div>User Name: {{userNameForOneWay}}</div><br>
+ <button class="btn btn-primary" 
 [disabled]="!allowNewUser"
 
-(click)=" changeUserCreatedStatusChange()" > Add user</button> -->
+(click)=" changeUserCreatedStatusChange()" > Add user</button> <br>
+
+{{userCreatedStatus}}
+
+
+<h2>Structural Directive</h2>
+<!-- *ngif is a Structural Directive(It Chnages the Structure of the DOM) -->
+<!-- Structural DOM is reffered to the ngif is because it chnages the Structure of teh DOM -->
+<!-- This is the Normal way attaing the ngif/else process  -->
+<p>This is the Normal way attaing the ngif process </p>
+<div *ngIf="isUserCreated" >User is Created and the Username is {{userNameForOneWay}}</div>
+<div *ngIf="!isUserCreated" >No User is Created</div>
+
+<br>
+<p>This is Other method for the ngif Process </p>
+<div *ngIf="isUserCreated; else noUser "  >User is Created and the Username is {{userNameForOneWay}}</div>
+<ng-template #noUser>
+<div *ngIf="!isUserCreated" >No User is Created</div>
+
+</ng-template>
+
+
+
+
 <br><br>//////////////////////////////////////////////////////////////<br><br><br>
 
 
 
-Two way  Binding in the Form
+<h4>Two way  Binding in the Form </h4>
 <!-- Send Data from the  HTML Component to TS Component(Vica-Versa)  -->
 <!-- Note:- If we need to Wrok with Forms Module then we  need to   import the FormsModule in the  respective  -->
 
@@ -56,6 +82,9 @@ Two way  Binding in the Form
 (click)=" changeUserCreatedStatusChange()" > Add user</button> -->
 
 
+
+
+<br><br>//////////////////////////////////////////////////////////////<br><br><br>
 
 <!-- Imprting User Component in the Users in the User Compoenent -->
 <app-user></app-user>

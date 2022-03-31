@@ -33,11 +33,14 @@ allowNewUser :Boolean=false
 
 //Whenever the Component is Called the Constructor is Called
   constructor() {
-    //setting  this.allowNewUser=true after 3 seconds 
+    //setting  this.allowNewUser=true after 3 seconds for Propery Binding 
     setTimeout(()=>{
    this.allowNewUser=true
     },3000)
    }
+
+
+
 
   ngOnInit(): void {
   }

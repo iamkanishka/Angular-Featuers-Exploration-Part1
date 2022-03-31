@@ -61,6 +61,7 @@ So We will be Looking These features and Learn as we go on.
 3. How we can Import Component as Differnt Variation (As Element, As Attribute, As Class ) in the Correspoding Components
 4. Implement Data Binding in the Angular. Understanding String Interpolation in the HTML File
 5. Property Binding in the Angular, Bing Property to the attributes in the angular template
+6. Event Binding in Angular. Handle Click Events in te Angular
 
 
 

@@ -29,8 +29,15 @@ selector: 'app-users',
 })
 export class UsersComponent implements OnInit {
 
+allowNewUser :Boolean=false
 
-  constructor() { }
+//Whenever the Component is Called the Constructor is Called
+  constructor() {
+    //setting  this.allowNewUser=true after 3 seconds 
+    setTimeout(()=>{
+   this.allowNewUser=true
+    },3000)
+   }
 
   ngOnInit(): void {
   }

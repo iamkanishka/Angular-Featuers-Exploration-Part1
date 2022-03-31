@@ -1,5 +1,22 @@
-<h3>users works!</h3>
+<h3>Users Componenet</h3>
+
+
+
+<p>Propert Binding</p>
+<!-- Propert Binding in the Button [disabled]=true/false with allowNewUser Varible-->
+<button class="btn btn-primary" [disabled]="!allowNewUser"> Add user</button>
 <!-- Importing the User Component as HTML Elememt in the Users Componenet -->
+
+<!-- Rendering allowNewUser variable by String Interpolation -->
+<div>{{this.allowNewUser}}</div>
+
+<!-- Rendering allowNewUser variable by Property Binding  -->
+<div [innerText] = "allowNewUser"></div>
+
+
 <app-user></app-user>
+
+
+
 
 

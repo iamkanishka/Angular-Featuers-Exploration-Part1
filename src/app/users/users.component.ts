@@ -3,13 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   //Selector should be different for every compoenent
   //Below Selector is registerd with as a app-users as element
-selector: 'app-users',
-  
+  selector: 'app-users',
+
   //Below Selector is registerd with as a app-users as Attribute
   //selector: '[app-users]',
 
-   //Below Selector is registerd with as a app-users as Attribute
-   //selector: '.app-users',
+  //Below Selector is registerd with as a app-users as Attribute
+  //selector: '.app-users',
 
   //temlateUrl is for integrating template with URL of  template File
   templateUrl: './users.component.html',
@@ -29,16 +29,17 @@ selector: 'app-users',
 })
 export class UsersComponent implements OnInit {
 
-allowNewUser :Boolean=false
-userCreatedStatus: String = 'No User is Created'
+  allowNewUser: Boolean = false
+  userCreatedStatus: String = 'No User is Created'
+  userName = ''
 
-//Whenever the Component is Called the Constructor is Called
+  //Whenever the Component is Called the Constructor is Called
   constructor() {
     //setting  this.allowNewUser=true after 3 seconds for Propery Binding 
-    setTimeout(()=>{
-   this.allowNewUser=true
-    },3000)
-   }
+    setTimeout(() => {
+      this.allowNewUser = true
+    }, 3000)
+  }
 
 
 
@@ -46,8 +47,20 @@ userCreatedStatus: String = 'No User is Created'
   ngOnInit(): void {
   }
 
-  changeUserCreatedStatusChange(){
-  this.userCreatedStatus = 'User Created'
-}
+  changeUserCreatedStatusChange() {
+    this.userCreatedStatus = 'User Created'
+  }
 
+  onAddofUser(event: Event) {
+    //comnsoling the event data from the Input Field 
+
+    // Since the event  is Unknow trigger by form or a Button  or any Other Event then we can Specify the which type of Event 
+    console.log((event.target as HTMLInputElement).value)
+    // HTMLInputElement - one of the way for initialization
+    //  this.userName = (<HTMLInputElement>event.target).value
+    
+    // HTMLInputElement - Other  way for initialization
+    this.userName = (event.target as HTMLInputElement).value
+
+  }
 }

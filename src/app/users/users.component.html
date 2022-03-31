@@ -20,6 +20,23 @@
 <!-- After Event Click The Status Will Change -->
 {{userCreatedStatus}}
 
+
+
+
+
+<!-- Send Data from the Event Binding using $event Reserved word -->
+<!-- Note:- For Evey Event Change the Angular Sends special variable called "$event" which has the event triggered by the User -->
+<div class="my-2">
+    <label for="userName"> User Name</label>
+    <input type="text" class="form-control" (input)="onAddofUser($event)">
+</div>
+<div>User Name: {{userName}}</div>
+<!-- <button class="btn btn-primary" 
+[disabled]="!allowNewUser"
+
+(click)=" changeUserCreatedStatusChange()" > Add user</button> -->
+
+
 <app-user></app-user>
 
 

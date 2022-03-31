@@ -14,7 +14,16 @@
 
 <!-- String Interpolation Using variables from component.ts  -->
 <p> String Interpolation Using functiion which return the string/number from component.ts </p>
-<p>{{user}} {{userId}} is currently {{getUserStatus()}}</p>
+<p>{{user}} of  {{123}} UserID is currently {{getUserStatus()}}</p>
+
+
+
+<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes  </p>
+
+
+<div class="my-2" [ngStyle]="{'background-color': getColor()}">
+{{user}} of  {{123}} UserID is currently {{getUserStatus()}}
+</div>
 
 
 

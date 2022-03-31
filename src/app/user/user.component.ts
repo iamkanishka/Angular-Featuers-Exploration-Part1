@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 user="Kanishka Naik"
   userId:String="123"
-userStatus:String = "Online"
-  constructor() { }
+userStatus:String =''
+  constructor() { 
+
+    this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
+  }
 
   ngOnInit(): void {
   }
@@ -17,5 +20,14 @@ userStatus:String = "Online"
   getUserStatus(){
    return this.userStatus
   }
+
+   getColor(){
+     if(this.userStatus=='Online' ){
+return 'green'
+     }else{
+return 'red'
+       
+     }
+   }
 
 }

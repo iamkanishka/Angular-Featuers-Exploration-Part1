@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
+import {FormsModule} from '@angular/forms'
 //Deceorator
 @NgModule({
 //Every Component has to be Registered in the Respoective
@@ -16,7 +17,8 @@ import { UsersComponent } from './users/users.component';
 //Every Component has to be Registered in the Respective
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

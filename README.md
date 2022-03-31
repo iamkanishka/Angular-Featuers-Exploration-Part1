@@ -63,7 +63,7 @@ So We will be Looking These features and Learn as we go on.
 5. Property Binding in the Angular, Bing Property to the attributes in the angular template
 6. Event Binding in Angular. Handle Click Events in te Angular
 7. Send data from the Event Binding using $event reserved word
-8. 
+8. Two way Binding in the Form
 
 
 

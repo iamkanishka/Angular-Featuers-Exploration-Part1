@@ -2,7 +2,7 @@
 
 
 
-<p>Property and Event Binding</p>
+<h2>Property and Event Binding</h2>
 <!-- Propert Binding in the Button [disabled]=true/false with allowNewUser Varible-->
 <button class="btn btn-primary" 
 [disabled]="!allowNewUser"
@@ -20,23 +20,44 @@
 <!-- After Event Click The Status Will Change -->
 {{userCreatedStatus}}
 
+<br><br>//////////////////////////////////////////////////////////////<br><br><br>
 
 
 
 
+<h2>One way Binding in the Form</h2>
 <!-- Send Data from the Event Binding using $event Reserved word -->
 <!-- Note:- For Evey Event Change the Angular Sends special variable called "$event" which has the event triggered by the User -->
 <div class="my-2">
-    <label for="userName"> User Name</label>
+    <label for="userNameForOneWay"> User Name</label>
     <input type="text" class="form-control" (input)="onAddofUser($event)">
 </div>
-<div>User Name: {{userName}}</div>
+<div>User Name: {{userNameForOneWay}}</div>
+<!-- <button class="btn btn-primary" 
+[disabled]="!allowNewUser"
+
+(click)=" changeUserCreatedStatusChange()" > Add user</button> -->
+<br><br>//////////////////////////////////////////////////////////////<br><br><br>
+
+
+
+Two way  Binding in the Form
+<!-- Send Data from the  HTML Component to TS Component(Vica-Versa)  -->
+<!-- Note:- If we need to Wrok with Forms Module then we  need to   import the FormsModule in the  respective  -->
+
+<div class="my-2">
+    <label for="userNameForOneWay"> User Name</label>
+    <input type="text" class="form-control" [(ngModel)]="userNameForTwoWay">
+</div>
+<div>User Name: {{userNameForTwoWay}}</div>
 <!-- <button class="btn btn-primary" 
 [disabled]="!allowNewUser"
 
 (click)=" changeUserCreatedStatusChange()" > Add user</button> -->
 
 
+
+<!-- Imprting User Component in the Users in the User Compoenent -->
 <app-user></app-user>
 
 

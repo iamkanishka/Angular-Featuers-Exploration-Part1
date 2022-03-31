@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 
 @Component({
   //Selector should be different for every compoenent
@@ -31,7 +32,9 @@ export class UsersComponent implements OnInit {
 
   allowNewUser: Boolean = false
   userCreatedStatus: String = 'No User is Created'
-  userName = ''
+  userNameForOneWay = ''
+  userNameForTwoWay = 'Kanshka Naik'
+
 
   //Whenever the Component is Called the Constructor is Called
   constructor() {
@@ -57,10 +60,10 @@ export class UsersComponent implements OnInit {
     // Since the event  is Unknow trigger by form or a Button  or any Other Event then we can Specify the which type of Event 
     console.log((event.target as HTMLInputElement).value)
     // HTMLInputElement - one of the way for initialization
-    //  this.userName = (<HTMLInputElement>event.target).value
+    //  this.userNameForOneWay = (<HTMLInputElement>event.target).value
     
     // HTMLInputElement - Other  way for initialization
-    this.userName = (event.target as HTMLInputElement).value
+    this.userNameForOneWay = (event.target as HTMLInputElement).value
 
   }
 }

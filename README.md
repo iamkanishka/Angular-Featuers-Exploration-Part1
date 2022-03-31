@@ -55,9 +55,9 @@ Create high-performance, complex choreographies and animation timelines with ver
 12. Accessibility
 Create accessible applications with ARIA-enabled components, developer guides, and built-in a11y test infrastructure.
 
-So We will be Looking These features and Learn as we go  we go on.
-1. Create Custom (User) Component and add it in the User Module 
-1. 
+So We will be Looking These features and Learn as we go on.
+1. Create Custom (User) Component by scratch and creating Users Component and imporing user component    
+2. Diiferent ways of integrating html code and styles in teh Compoenent
 
 
 

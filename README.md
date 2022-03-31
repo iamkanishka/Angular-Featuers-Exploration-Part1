@@ -57,7 +57,9 @@ Create accessible applications with ARIA-enabled components, developer guides, a
 
 So We will be Looking These features and Learn as we go on.
 1. Create Custom (User) Component by scratch and creating Users Component and imporing user component    
-2. How Selector Deirective Works and  Different ways of integrating html code and styles in teh Compoenent
+2. How Compoenent Directive Works and  Different ways of integrating html code and styles in the Component
+3. How we can Import Component as Differnt Variation (As Element, As Attribute, As Class ) in the Correspoding Compoenents
+4. 
 
 
 

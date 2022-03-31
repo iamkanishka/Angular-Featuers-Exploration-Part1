@@ -30,6 +30,7 @@ selector: 'app-users',
 export class UsersComponent implements OnInit {
 
 allowNewUser :Boolean=false
+userCreatedStatus: String = 'No User is Created'
 
 //Whenever the Component is Called the Constructor is Called
   constructor() {
@@ -44,5 +45,9 @@ allowNewUser :Boolean=false
 
   ngOnInit(): void {
   }
+
+  changeUserCreatedStatusChange(){
+  this.userCreatedStatus = 'User Created'
+}
 
 }

@@ -2,9 +2,12 @@
 
 
 
-<p>Propert Binding</p>
+<p>Property and Event Binding</p>
 <!-- Propert Binding in the Button [disabled]=true/false with allowNewUser Varible-->
-<button class="btn btn-primary" [disabled]="!allowNewUser"> Add user</button>
+<button class="btn btn-primary" 
+[disabled]="!allowNewUser"
+
+(click)=" changeUserCreatedStatusChange()" > Add user</button>
 <!-- Importing the User Component as HTML Elememt in the Users Componenet -->
 
 <!-- Rendering allowNewUser variable by String Interpolation -->
@@ -13,6 +16,9 @@
 <!-- Rendering allowNewUser variable by Property Binding  -->
 <div [innerText] = "allowNewUser"></div>
 
+<!-- Event binding -->
+<!-- After Event Click The Status Will Change -->
+{{userCreatedStatus}}
 
 <app-user></app-user>
 

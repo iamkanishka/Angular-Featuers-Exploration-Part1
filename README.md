@@ -65,7 +65,7 @@ So We will be Looking These features and Learn as we go on.
 7. Send data from the Event Binding using $event reserved word
 8. Two way Binding in the Form
 9. Using ngif with else Comditionin HTML Template
-10. styling Dynamically for the Component templates Using ngStyle
+10. Styling Dynamically for the Component templates Using ngStyle
 
 
 

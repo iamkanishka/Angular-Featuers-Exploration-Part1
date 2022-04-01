@@ -35,7 +35,8 @@ export class UsersComponent implements OnInit {
   userNameForOneWay = ''
   userNameForTwoWay = 'Kanshka Naik'
   isUserCreated :Boolean = false
-
+  users :any[]=['kansihka','Robin Williams','Dev Anand']
+  userStatus :string = ''
 
   //Whenever the Component is Called the Constructor is Called
   constructor() {
@@ -43,6 +44,7 @@ export class UsersComponent implements OnInit {
     setTimeout(() => {
       this.allowNewUser = true
     }, 3000)
+    this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
   }
 
 
@@ -53,7 +55,11 @@ export class UsersComponent implements OnInit {
 
   changeUserCreatedStatusChange() {
     this.isUserCreated= true
-    this.userCreatedStatus = 'User Created'
+   //ngIf demo
+    // this.userCreatedStatus = 'User Created'
+
+    //ngFor Demo
+    this.users.push(this.userNameForOneWay)
   }
 
   onAddofUser(event: Event) {
@@ -68,4 +74,8 @@ export class UsersComponent implements OnInit {
     this.userNameForOneWay = (event.target as HTMLInputElement).value
 
   }
+
+  getUserStatus(){
+    return this.userStatus
+   }
 }

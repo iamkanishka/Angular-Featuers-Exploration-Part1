@@ -10,8 +10,10 @@ user="Kanishka Naik"
   userId:String="123"
 userStatus:String =''
   constructor() { 
+       //Makeing User Status  Dynamic
+   // this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
+    this.userStatus='Offline'
 
-    this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
   }
 
   ngOnInit(): void {

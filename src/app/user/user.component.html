@@ -18,10 +18,19 @@
 
 
 
-<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes  </p>
+<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes using ngStyle  </p>
 
 
 <div class="my-2" [ngStyle]="{'background-color': getColor()}">
+{{user}} of  {{123}} UserID is currently {{getUserStatus()}}
+</div>
+
+
+
+<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes ngClass  </p>
+
+
+<div class="my-2" [ngClass]="{Offline:userStatus =='Offline'}">
 {{user}} of  {{123}} UserID is currently {{getUserStatus()}}
 </div>
 

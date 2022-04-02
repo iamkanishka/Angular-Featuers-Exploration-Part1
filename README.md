@@ -64,7 +64,7 @@ So We will be Looking These features and Learn as we go on.
 6. Event Binding in Angular. Handle Click Events in te Angular
 7. Send Data from the Event Binding using $event reserved word
 8. Two way Binding in the Form
-9. Using ngif with else Comditionin HTML Template
+9. Using ngif with else Condition in HTML Template
 10. Styling Dynamically for the Component templates Using ngStyle
 11. Apply CSS Classes Dynamically with ngClass Attribute Directive
 12. Use of _ngFor Structural Directive for outputting in Lists 
@@ -73,7 +73,7 @@ So We will be Looking These features and Learn as we go on.
 15. Send Data from Child to parent Compoenent, Binding to Custom Events using @Output
 16. Understand View Encapsulation in Angular
 17. Using Local References to Access the HTML Element
-
+18. Access HTML Elemenst in teh DOM & Template with @ViewChild and the type ElementRef
 
 
 

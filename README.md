@@ -75,6 +75,9 @@ So We will be Looking These features and Learn as we go on.
 17. Using Local References to Access the HTML Element
 18. Access HTML Element in teh DOM & Template with @ViewChild and the type ElementRef
 19. Projecting th eHTML Content Written Between the Comnpoenent using ng-Content
+20. UnderStanding the Compoenent Life Cycle methods in Angular 
+     (ngOnInit, ngOnChanges, ngDoCheck, ngAfterContentInit,ngAfterContentChecked, ngAfterViewInit ngOnDestroy)
+    
 
 
 

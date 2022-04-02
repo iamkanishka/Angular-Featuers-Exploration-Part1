@@ -3,10 +3,15 @@
 <!-- Note:- For Evey Event Change the Angular Sends special variable called "$event" which has the event triggered by the User -->
 <div class="my-2">
     <label for="userNameForOneWay"> User Name</label>
-    <input type="text" class="form-control" [(ngModel)]="userName " >
+   <!-- Child  Parent Component data transfer -->
+    <!-- <input type="text" class="form-control" [(ngModel)]="userName " > -->
+     
+    <!-- Local Reference -->
+    <input type="text" class="form-control" #userInput >
+
 </div>
-
- <button class="btn btn-primary" 
-
-
-(click)=" onUserAdded()" > Add user</button> <br>
+ <!-- Child  Parent Component data transfer -->
+ <!-- <button class="btn btn-primary" (click)=" onUserAdded(userInput)" > Add user</button> <br>\ -->
+ 
+ <!-- Using Local Reference -->
+ <button class="btn btn-primary" (click)=" onUserAdded(userInput)" > Add user</button> <br>

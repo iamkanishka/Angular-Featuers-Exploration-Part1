@@ -12,8 +12,14 @@ export class AddUserComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onUserAdded() {
- this.userAdded.emit(this.userName)
-  }
 
+  //Child parent Demo 
+//   onUserAdded() {
+//  this.userAdded.emit(this.userName)
+//   }
+
+//Local Reference
+  onUserAdded(userInput:HTMLInputElement) {
+    this.userAdded.emit(userInput.value)
+     }
 }

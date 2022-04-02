@@ -51,6 +51,9 @@ export class UsersComponent implements OnInit {
   user = 'Kanishka Naik';
   userId: String = '123';
 
+
+nameforngonChnages:String = 'Kanishka ngonchnages'
+
   //Whenever the Component is Called the Constructor is Called
   constructor() {
     //setting  this.allowNewUser=true after 3 seconds for Propery Binding
@@ -111,4 +114,14 @@ export class UsersComponent implements OnInit {
       return 'red';
     }
   }
+
+ // ngOnChanges Demo
+  changeName(){
+ this.nameforngonChnages = 'Hot Shot Kanoshka'
+  }
+
+  onDeleteComponent(){
+    this.users = []
+  }
+
 }

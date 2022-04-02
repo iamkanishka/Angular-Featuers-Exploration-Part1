@@ -60,7 +60,7 @@ So We will be Looking These features and Learn as we go on.
 2. How Component Directive Works and  Different ways of integrating HTML code and styles in the Component
 3. How we can Import Component as Differnt Variation (As Element, As Attribute, As Class ) in the Correspoding Components
 4. Implement Data Binding in the Angular. Understanding String Interpolation in the HTML File
-5. Property Binding in the Angular, Bing Property to the attributes in the angular template
+5. Property Binding in the Angular, Binding Property to the attributes in the angular template
 6. Event Binding in Angular. Handle Click Events in the Angular
 7. Send Data from the Event Binding using $event reserved word
 8. Two way Binding in the Form
@@ -77,6 +77,9 @@ So We will be Looking These features and Learn as we go on.
 19. Projecting th eHTML Content Written Between the Comnpoenent using ng-Content
 20. UnderStanding the Compoenent Life Cycle methods in Angular 
      (ngOnInit, ngOnChanges, ngDoCheck, ngAfterContentInit,ngAfterContentChecked, ngAfterViewInit ngOnDestroy)
+21. ngOnInit, ngOnChanges, Constructor of the Angular Componenet life cycle with Example
+22. Check  ngDoCheck, ngAfterContentInit,ngAfterContentChecked, ngAfterViewInit ngOnDestroy in Angular
+
     
 
 

@@ -61,7 +61,7 @@ So We will be Looking These features and Learn as we go on.
 3. How we can Import Component as Differnt Variation (As Element, As Attribute, As Class ) in the Correspoding Components
 4. Implement Data Binding in the Angular. Understanding String Interpolation in the HTML File
 5. Property Binding in the Angular, Bing Property to the attributes in the angular template
-6. Event Binding in Angular. Handle Click Events in te Angular
+6. Event Binding in Angular. Handle Click Events in the Angular
 7. Send Data from the Event Binding using $event reserved word
 8. Two way Binding in the Form
 9. Using ngif with else Condition in HTML Template
@@ -73,7 +73,8 @@ So We will be Looking These features and Learn as we go on.
 15. Send Data from Child to parent Compoenent, Binding to Custom Events using @Output
 16. Understand View Encapsulation in Angular
 17. Using Local References to Access the HTML Element
-18. Access HTML Elemenst in teh DOM & Template with @ViewChild and the type ElementRef
+18. Access HTML Element in teh DOM & Template with @ViewChild and the type ElementRef
+19. Projecting th eHTML Content Written Between the Comnpoenent using ng-Content
 
 
 

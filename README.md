@@ -71,6 +71,7 @@ So We will be Looking These features and Learn as we go on.
 13. Debug Angular Code in Browser using Source maps and also using Augury Extension
 14. Send Data from Parent to Child Component using Custom Properties with @Input
 15. Send Data from Child to parent Compoenent, Binding to Custom Events using @Output
+16. Understand View Encapsulation in Angular
 
 
 

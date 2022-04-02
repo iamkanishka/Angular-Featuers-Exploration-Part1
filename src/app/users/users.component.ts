@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -27,6 +27,15 @@ import { FormsModule } from '@angular/forms';
   //       color: red;
   //     }`
   //  ]
+
+  // View Encapsulation(CSS) Special Identifuer is Removed from the ViewEncapsulation.None
+  //encapsulation:ViewEncapsulation.None
+  // View Encapsulation Special Identifuer is Removed from the ViewEncapsulation.ShadowDom 
+  //Note: Shadow DOM is not suppoerted by the Browsers
+  // encapsulation:ViewEncapsulation.ShadowDom
+
+  //Note: Shadow DOM is Replaced with Emulated
+  // encapsulation:ViewEncapsulation.Emulated
 })
 export class UsersComponent implements OnInit {
   allowNewUser: Boolean = false;
@@ -37,7 +46,7 @@ export class UsersComponent implements OnInit {
   users: any[] = ['kansihka', 'Robin Williams', 'Dev Anand'];
   userStatus: string = '';
 
-  userAddedStatusOutput:any
+  userAddedStatusOutput: any
 
   user = 'Kanishka Naik';
   userId: String = '123';
@@ -55,7 +64,7 @@ export class UsersComponent implements OnInit {
     this.userStatus = 'Offline';
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   changeUserCreatedStatusChange() {
     this.isUserCreated = true;
@@ -68,7 +77,7 @@ export class UsersComponent implements OnInit {
 
   }
 
-  onUserAdded(event:string) {
+  onUserAdded(event: string) {
     this.isUserCreated = true;
     //ngIf demo
     // this.userCreatedStatus = 'User Created'

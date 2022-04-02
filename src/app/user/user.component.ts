@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,30 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
-user="Kanishka Naik"
-  userId:String="123"
-userStatus:String =''
-  constructor() { 
-       //Makeing User Status  Dynamic
-   // this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
-    this.userStatus='Offline'
 
-  }
+  @Input() userName:String = ''
+
+  constructor() { 
+ }
 
   ngOnInit(): void {
   }
-//Function Returning the user Status
-  getUserStatus(){
-   return this.userStatus
-  }
 
-   getColor(){
-     if(this.userStatus=='Online' ){
-return 'green'
-     }else{
-return 'red'
-       
-     }
-   }
+
 
 }

@@ -1,5 +1,42 @@
 <h3>Users Componenet</h3>
 
+<h4>String Interpolation </h4>
+<!-- String Interpolation Coonvert the number datatype to the String  -->
+<!-- Differnt type String Interpolation  -->
+
+
+<!-- String Interpolation Using Direct string Double quotes -->
+<p>String Interpolation Using Direct string Double quotes</p>
+<p>{{"User"}} {{"userId"}} is currently {{"userStatus"}}</p>
+
+<!-- String Interpolation Using variables from component.ts  -->
+<p> String Interpolation Using variables from component.ts </p>
+<p>{{user}} {{userId}} is currently {{userStatus}}</p>
+
+<!-- String Interpolation Using variables from component.ts  -->
+<p> String Interpolation Using functiion which return the string/number from component.ts </p>
+<p>{{user}} of  {{123}} UserID is currently {{getUserStatus()}}</p>
+
+
+
+<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes using ngStyle  </p>
+
+
+<div class="my-2" [ngStyle]="{'background-color': getColor()}">
+{{user}} of  {{123}} UserID is currently {{getUserStatus()}}
+</div>
+
+
+
+<p style="font-weight: bold;">Styling Dynamically for the component Tempaltes ngClass  </p>
+
+
+<div class="my-2" [ngClass]="{Offline:userStatus =='Offline'}">
+{{user}} of  {{123}} UserID is currently {{getUserStatus()}}
+</div>
+
+
+<br><br>//////////////////////////////////////////////////////////////<br><br><br>
 
 
 <h2>Property and Event Binding</h2>
@@ -94,10 +131,16 @@
 </div>
 
 
-<!-- Imprting User Component in the Users in the User Compoenent -->
-<app-user></app-user>
 
 
+
+
+<!-- Imprting User Component in the Users in the User Compoenent for Parent- child Component Data Traansfer-->
+<div>Imprting User Component in the Users in the User Compoenent for Parent- child Component Data Transfer</div>
+<div *ngFor="let user of users" >
+<app-user [userName]=user></app-user>
+
+</div>
 
 
 

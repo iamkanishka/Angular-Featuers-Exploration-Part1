@@ -69,7 +69,8 @@ So We will be Looking These features and Learn as we go on.
 11. Apply CSS Classes Dynamically with ngClass Attribute Directive
 12. Use of _ngFor Structural Directive for outputting in Lists 
 13. Debug Angular Code in Browser using Source maps and also using Augury Extension
-14. 
+14. Send Data from Parent to Child Component using Custom Properties with @Input
+15. 
 
 
 

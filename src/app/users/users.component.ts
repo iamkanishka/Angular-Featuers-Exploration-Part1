@@ -37,6 +37,8 @@ export class UsersComponent implements OnInit {
   users: any[] = ['kansihka', 'Robin Williams', 'Dev Anand'];
   userStatus: string = '';
 
+  userAddedStatusOutput:any
+
   user = 'Kanishka Naik';
   userId: String = '123';
 
@@ -62,6 +64,19 @@ export class UsersComponent implements OnInit {
 
     //ngFor Demo
     this.users.push(this.userNameForOneWay);
+    //Getting Output from the User Compoenent
+
+  }
+
+  onUserAdded(event:string) {
+    this.isUserCreated = true;
+    //ngIf demo
+    // this.userCreatedStatus = 'User Created'
+
+    //ngFor Demo
+    this.users.push(event);
+    //Getting Output from the User Compoenent
+
   }
 
   onAddofUser(event: Event) {

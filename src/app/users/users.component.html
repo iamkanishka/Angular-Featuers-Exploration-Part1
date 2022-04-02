@@ -136,7 +136,12 @@
 
 
 <!-- Imprting User Component in the Users in the User Compoenent for Parent- child Component Data Traansfer-->
-<div>Imprting User Component in the Users in the User Compoenent for Parent- child Component Data Transfer</div>
+<div>Imprting User Component in the Users in the User Compoenent for Parent- child Component Data Transfer</div><br>
+<div>Imprting User Component in the Users in the User Compoenent for Child- Parent Component Data Transfer</div>
+
+<app-add-user (userAdded)="onUserAdded($event)"></app-add-user>
+
+<h3>Users List</h3>
 <div *ngFor="let user of users" >
 <app-user [user]=user></app-user>
 

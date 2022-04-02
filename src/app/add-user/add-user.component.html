@@ -1,0 +1,12 @@
+<h4>Child  Parent Component data transfer</h4>
+<!-- Send Data from the Event Binding using $event Reserved word -->
+<!-- Note:- For Evey Event Change the Angular Sends special variable called "$event" which has the event triggered by the User -->
+<div class="my-2">
+    <label for="userNameForOneWay"> User Name</label>
+    <input type="text" class="form-control" [(ngModel)]="userName " >
+</div>
+
+ <button class="btn btn-primary" 
+
+
+(click)=" onUserAdded()" > Add user</button> <br>

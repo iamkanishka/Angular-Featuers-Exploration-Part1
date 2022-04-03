@@ -87,6 +87,7 @@ So We will be Looking These features and Learn as we go on.
 28. Sending input Data to the Directive as input properties in the Angular
 29. Understand the Concept of the Structural Directives in the Angular
 30. Create Custom Structural Directive in teh Angular using Template and ViewContainerRef 
+31. How to use ngSwitch, ngSwitchCase, ngSwitchDefault Directive in Angular
 
     
 

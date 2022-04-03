@@ -81,7 +81,7 @@ So We will be Looking These features and Learn as we go on.
 22. Check  ngDoCheck, ngAfterContentInit,ngAfterContentChecked, ngAfterViewInit ngOnDestroy in Angular
 23. Getting Access to the ng-Content HTML using @ContentChild
 24. Create Basic Custom Attribute Directive in angular 
-25. Using Rendered2 to create teh custom attribute directive to manipulate DOM in Angular
+25. Using Rendered2 to create the custom attribute directive to manipulate DOM in Angular
 
     
 

@@ -25,7 +25,7 @@ export class AlternatengifDirective implements OnChanges {
    }
 
 //this works when the directive is initialized with predefined value
-
+// If you work with Set pproperty you dont need to add ngonChnages
 //this works fine with when nrmal way of Input Variable initialization
   //  ngOnInit(): void {
   //      if(this.appAlternatengif){

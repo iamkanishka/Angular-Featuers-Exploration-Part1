@@ -20,6 +20,11 @@ export class RederrehighlightDirective implements OnInit {
     //Changing Style on mouseleave
       this.rederer.setStyle(this.element.nativeElement, 'background-color', 'yellow')
      }
+
+ @HostListener('click') onClick(event: Event) {
+      //Changing Style on mouseleave
+        this.rederer.setStyle(this.element.nativeElement, 'background-color', 'blue')
+       }
    
 
 }

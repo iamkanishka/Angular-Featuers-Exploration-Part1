@@ -82,6 +82,7 @@ So We will be Looking These features and Learn as we go on.
 23. Getting Access to the ng-Content HTML using @ContentChild
 24. Create Basic Custom Attribute Directive in angular 
 25. Using Rendered2 to create the custom attribute directive to manipulate DOM in Angular
+26. Accessing the Events for the Directive Element usibg HostListner in Angular
 
     
 

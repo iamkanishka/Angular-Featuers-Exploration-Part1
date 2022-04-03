@@ -149,13 +149,32 @@
 <app-user [user]=user [name]="nameforngonChnages">
 <!-- <div>Inserting the Data in the Compoennt Element using ng-Content</div> -->
 <!-- <p #userParagraph>User: {{userName}} -->
-    
+
     <!-- <div>Content Child Example</div> -->
 <p #userParagraph>User: {{user}}
     
 </app-user>
 
 </div>
+
+
+<!-- With Style Command -->
+<!-- <div [ngStyle]="{'background-color': 'red'}" >Please add the background color red </div> -->
+
+<!-- With Directive as Element -->
+ <!-- <div >
+    <appHighlightText> Please add the background color red </appHighlightText>
+     </div>  -->
+
+
+<!-- With Directive as  -->
+ <div appHighlightText>
+   Please add the background color red 
+     </div> 
+     
+
+
+
 
 
 

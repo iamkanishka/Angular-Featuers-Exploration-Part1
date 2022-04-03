@@ -80,6 +80,7 @@ So We will be Looking These features and Learn as we go on.
 21. ngOnInit, ngOnChanges, Constructor of the Angular Componenet life cycle with Example
 22. Check  ngDoCheck, ngAfterContentInit,ngAfterContentChecked, ngAfterViewInit ngOnDestroy in Angular
 23. Getting Access to the ng-Content HTML using @ContentChild
+24. Create Basic Custom Attribute Directive in angular 
 
     
 

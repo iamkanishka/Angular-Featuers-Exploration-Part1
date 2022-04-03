@@ -7,6 +7,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import {FormsModule} from '@angular/forms';
 import { AddUserComponent } from './add-user/add-user.component'
+import {HightlightDirective} from './Directives/highlight.directive'
 //Deceorator
 @NgModule({
 //Every Component has to be Registered in the Respoective
@@ -14,13 +15,16 @@ import { AddUserComponent } from './add-user/add-user.component'
     AppComponent,
     UserComponent,
     UsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    HightlightDirective
   ],
 //Every Component has to be Registered in the Respective
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]

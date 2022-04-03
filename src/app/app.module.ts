@@ -8,7 +8,8 @@ import { UsersComponent } from './users/users.component';
 import {FormsModule} from '@angular/forms';
 import { AddUserComponent } from './add-user/add-user.component'
 import {HightlightDirective} from './Directives/highlight.directive';
-import { RederrehighlightDirective } from './Directives/rederrehighlight.directive'
+import { RederrehighlightDirective } from './Directives/rederrehighlight.directive';
+import { AlternatengifDirective } from './Directives/alternatengif.directive'
 //Deceorator
 @NgModule({
 //Every Component has to be Registered in the Respoective
@@ -18,7 +19,8 @@ import { RederrehighlightDirective } from './Directives/rederrehighlight.directi
     UsersComponent,
     AddUserComponent,
     HightlightDirective,
-    RederrehighlightDirective
+    RederrehighlightDirective,
+    AlternatengifDirective
   ],
 //Every Component has to be Registered in the Respective
   imports: [

@@ -1,5 +1,5 @@
 import { AfterContentChecked, AfterContentInit, Component, ContentChild, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 
 @Component({
   //Selector should be different for every compoenent
@@ -45,14 +45,14 @@ export class UsersComponent implements OnInit, AfterContentInit {
   isUserCreated: Boolean = false; 
   users: any[] = ['kansihka', 'Robin Williams', 'Dev Anand'];
   userStatus: string = '';
-  isDivAvailable:Boolean=false
+  isDivAvailable:boolean=false
 
   userAddedStatusOutput: any
 
   user = 'Kanishka Naik';
   userId: String = '123';
 
-    //Content Chold Demo
+    //Content Child Demo
     @ContentChild('userParagraph') userParagraph: ElementRef | undefined
 
 

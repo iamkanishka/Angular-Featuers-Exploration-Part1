@@ -83,6 +83,7 @@ So We will be Looking These features and Learn as we go on.
 24. Create Basic Custom Attribute Directive in angular 
 25. Using Rendered2 to create the custom attribute directive to manipulate DOM in Angular
 26. Accessing the Events for the Directive Element usibg HostListner in Angular
+27. Using HostBinding Decorator to Bind the Properties for the Directive element in Angular
 
     
 

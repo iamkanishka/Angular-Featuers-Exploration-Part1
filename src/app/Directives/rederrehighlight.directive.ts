@@ -1,10 +1,18 @@
-import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appRederrehighlight]'
 })
 export class RederrehighlightDirective implements OnInit {
   @HostBinding('style.backgroundColor') color: string | undefined
+
+  @Input('appRederrehighlight') defaulColor :string='orange';
+  @Input() userColor :string='purple';
+
+  //Withe Definition in the HTML input for this Ddirective
+  // @Input() defaulColor :string='orange';
+  // @Input() userColor :string='purple';
+
 
   constructor(private element: ElementRef, private rederer: Renderer2) {
     this.color = 'red'
@@ -21,7 +29,12 @@ export class RederrehighlightDirective implements OnInit {
     // this.rederer.setStyle(this.element.nativeElement, 'background-color', 'green')
 
     // Using HostBinding
-    this.color = 'green'
+   // this.color = 'green'
+
+//Getting Color from the   
+   this.color = this.defaulColor || this.userColor
+
+
 
   }
   @HostListener('mouseleave') onmouseleave(event: Event) {
@@ -29,7 +42,11 @@ export class RederrehighlightDirective implements OnInit {
     //Using native way
     // this.rederer.setStyle(this.element.nativeElement, 'background-color', 'yellow')
     // Using HostBinding
-    this.color = 'yello'
+   // this.color = 'yellow'
+  
+
+   //Getting Color from the   
+   this.color = this.defaulColor || this.userColor
   }
 
   @HostListener('click') onClick(event: Event) {
@@ -38,7 +55,11 @@ export class RederrehighlightDirective implements OnInit {
 
     // this.rederer.setStyle(this.element.nativeElement, 'background-color', 'blue')
     // Using HostBinding
-    this.color = 'blue'
+  //  this.color = 'blue'
+
+
+  //Getting Color from the   
+  this.color = this.defaulColor || this.userColor
   }
 
 

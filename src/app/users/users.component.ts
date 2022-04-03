@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, Component, ContentChild, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -37,12 +37,12 @@ import { FormsModule } from '@angular/forms';
   //Note: Shadow DOM is Replaced with Emulated
   // encapsulation:ViewEncapsulation.Emulated
 })
-export class UsersComponent implements OnInit {
+export class UsersComponent implements OnInit, AfterContentInit {
   allowNewUser: Boolean = false;
   userCreatedStatus: String = 'No User is Created';
   userNameForOneWay = '';
   userNameForTwoWay = 'Kanshka Naik';
-  isUserCreated: Boolean = false;
+  isUserCreated: Boolean = false; 
   users: any[] = ['kansihka', 'Robin Williams', 'Dev Anand'];
   userStatus: string = '';
 
@@ -50,6 +50,9 @@ export class UsersComponent implements OnInit {
 
   user = 'Kanishka Naik';
   userId: String = '123';
+
+    //Content Chold Demo
+    @ContentChild('userParagraph') userParagraph: ElementRef | undefined
 
 
 nameforngonChnages:String = 'Kanishka ngonchnages'
@@ -67,7 +70,12 @@ nameforngonChnages:String = 'Kanishka ngonchnages'
     this.userStatus = 'Offline';
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+    //Content Chold Demo
+ //Note :- Contenet Child Wont Work on the ngOninit
+ console.log('userParagraph',this.userParagraph)
+   }
 
   changeUserCreatedStatusChange() {
     this.isUserCreated = true;
@@ -122,6 +130,22 @@ nameforngonChnages:String = 'Kanishka ngonchnages'
 
   onDeleteComponent(){
     this.users = []
+  }
+
+
+  
+  ngAfterContentInit(): void {
+    //Called after ngOnInit when the component's or directive's content has been initialized.
+    //Add 'implements AfterContentInit' to the class.
+    console.log(' ngAfterContentInit Called')
+
+     //Note :- Contenet Child Wont Work on the ngOninit
+     //Note :- Contenet Child Wil  Work on the ngAfterContentInit
+
+ console.log('userParagraph',this.userParagraph)
+ console.log('userParagraph',this.userParagraph?.nativeElement.textContent)
+
+
   }
 
 }

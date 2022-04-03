@@ -21,8 +21,7 @@ export class UserComponent implements
   //ngOnchnages example
   @Input() name: String = ''
   
-  //Content Chold Demo
-  @ContentChild('userParagraph') userParagraph: ElementRef | undefined
+
 
 
 
@@ -35,9 +34,7 @@ export class UserComponent implements
     //ngOnInit Will be Called After  the Constructor
  console.log('ngOnInit Called')
     
- //Content Chold Demo
- //Note :- Contenet Child Wont Work on the ngOninit
- console.log('userParagraph',this.userParagraph)
+ 
   }
 
   //ngOnChnages will get triggered when there is a changes in the input field
@@ -61,11 +58,6 @@ export class UserComponent implements
     //Add 'implements AfterContentInit' to the class.
     console.log(' ngAfterContentInit Called')
 
-     //Note :- Contenet Child Wont Work on the ngOninit
-     //Note :- Contenet Child Wil  Work on the ngAfterContentInit
-
- console.log('userParagraph',this.userParagraph)
- console.log('userParagraph',this.userParagraph)
 
 
   }

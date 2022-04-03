@@ -39,8 +39,8 @@ Quickly create UI views with simple and powerful template syntax.
 
 8. Angular CLI
 Command line tools: start building fast, add components and tests, then instantly deploy.
-    1.  `ng g c <component_name>` Command for Adding Component
-    2. 
+    1.  `ng g c <component_name>` Command for Creating Component
+    2.  `ng g d <directive_name>` Command for Creating Directive
 
 9. IDEs
 Get intelligent code completion, instant errors, and other feedback in popular editors and IDEs.

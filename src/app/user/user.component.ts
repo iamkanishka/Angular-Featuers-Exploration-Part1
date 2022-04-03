@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, ElementRef, ContentChild } from '@angular/core';
 
 
 @Component({
@@ -20,6 +20,11 @@ export class UserComponent implements
 
   //ngOnchnages example
   @Input() name: String = ''
+  
+  //Content Chold Demo
+  @ContentChild('userParagraph') userParagraph: ElementRef | undefined
+
+
 
   constructor() {
     //Constructor Will be Called First before the ngOnInit
@@ -28,8 +33,11 @@ export class UserComponent implements
 
   ngOnInit(): void {
     //ngOnInit Will be Called After  the Constructor
-
-    console.log('ngOnInit Called')
+ console.log('ngOnInit Called')
+    
+ //Content Chold Demo
+ //Note :- Contenet Child Wont Work on the ngOninit
+ console.log('userParagraph',this.userParagraph)
   }
 
   //ngOnChnages will get triggered when there is a changes in the input field
@@ -52,6 +60,13 @@ export class UserComponent implements
     //Called after ngOnInit when the component's or directive's content has been initialized.
     //Add 'implements AfterContentInit' to the class.
     console.log(' ngAfterContentInit Called')
+
+     //Note :- Contenet Child Wont Work on the ngOninit
+     //Note :- Contenet Child Wil  Work on the ngAfterContentInit
+
+ console.log('userParagraph',this.userParagraph)
+ console.log('userParagraph',this.userParagraph)
+
 
   }
 

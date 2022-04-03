@@ -1,4 +1,5 @@
 import { AfterContentChecked, AfterContentInit, Component, ContentChild, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
+import { SimpleserviceService } from '../Services/simpleservice.service';
 
 
 @Component({
@@ -59,12 +60,15 @@ export class UsersComponent implements OnInit, AfterContentInit {
 nameforngonChnages:String = 'Kanishka ngonchnages'
 value:any =99
   //Whenever the Component is Called the Constructor is Called
-  constructor() {
+  constructor(private simpleserviceService:SimpleserviceService) {
     //setting  this.allowNewUser=true after 3 seconds for Propery Binding
     setTimeout(() => {
       this.allowNewUser = true;
     }, 3000);
     this.userStatus = Math.random() > 0.5 ? 'Online' : 'Offline';
+    
+    //Use of Service for Unified function Usage
+    this.simpleserviceService.loggingconsole(this.user)
 
     //Makeing User Status  Dynamic
     // this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'
@@ -127,6 +131,8 @@ value:any =99
  // ngOnChanges Demo
   changeName(){
  this.nameforngonChnages = 'Hot Shot Kanoshka'
+ this.simpleserviceService.loggingconsole('kanishka statc')
+
   }
 
   onDeleteComponent(){

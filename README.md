@@ -41,6 +41,8 @@ Quickly create UI views with simple and powerful template syntax.
 Command line tools: start building fast, add components and tests, then instantly deploy.
     1.  `ng g c <component_name>` Command for Creating Component
     2.  `ng g d <directive_name>` Command for Creating Directive
+    3.  `ng g s <service_name>` Command for Creating Service
+
 
 9. IDEs
 Get intelligent code completion, instant errors, and other feedback in popular editors and IDEs.
@@ -88,6 +90,7 @@ So We will be Looking These features and Learn as we go on.
 29. Understand the Concept of the Structural Directives in the Angular
 30. Create Custom Structural Directive in teh Angular using Template and ViewContainerRef 
 31. How to use ngSwitch, ngSwitchCase, ngSwitchDefault Directive in Angular
+32. Services Introdcution, Create a simple service and use service in Components in Angular
 
     
 

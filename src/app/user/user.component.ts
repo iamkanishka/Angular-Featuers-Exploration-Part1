@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, OnChanges, SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, ElementRef, ContentChild } from '@angular/core';
+import { SimpleserviceService } from '../Services/simpleservice.service';
 
 
 @Component({
@@ -25,9 +26,12 @@ export class UserComponent implements
 
 
 
-  constructor() {
+  constructor(private simpleserviceService:SimpleserviceService ) {
     //Constructor Will be Called First before the ngOnInit
     console.log('Constructor Called')
+   
+    //Use of Service for Unified function Usage
+    this.simpleserviceService.loggingconsole('kanishka statc')
   }
 
   ngOnInit(): void {

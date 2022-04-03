@@ -85,6 +85,7 @@ So We will be Looking These features and Learn as we go on.
 26. Accessing the Events for the Directive Element usibg HostListner in Angular
 27. Using HostBinding Decorator to Bind the Properties for the Directive element in Angular
 28. Sending input Data to the Directive as input properties in the Angular
+29. Understand the Concept of the Structural Directives in the Angular
 
     
 

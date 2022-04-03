@@ -45,6 +45,7 @@ export class UsersComponent implements OnInit, AfterContentInit {
   isUserCreated: Boolean = false; 
   users: any[] = ['kansihka', 'Robin Williams', 'Dev Anand'];
   userStatus: string = '';
+  isDivAvailable:Boolean=false
 
   userAddedStatusOutput: any
 

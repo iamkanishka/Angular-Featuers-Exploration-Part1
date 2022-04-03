@@ -186,9 +186,20 @@
  
  <!--With Directive using Renderer way with sending data to element with app selecttor as a Input Value Another Way of Initilizing  -->
  <!-- <div appRederrehighlight="'black'" userColor="red" > Please add the background color green  way of adding color using HostBinding </div>  -->
-   
 
 
+
+ <!-- when ever theres is *Structural Directive then it manuplates as ngtemplate  -->
+ <div *ngIf="isDivAvailable" >
+     Shiow the div when isdivavailable is true
+ </div>
+
+
+ <ng-template [ngIf]="isDivAvailable" >
+    <div  >Show the div when isdivavailable is true
+    </div>
+ </ng-template>
+ 
 
 
 

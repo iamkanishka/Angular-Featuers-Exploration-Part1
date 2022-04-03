@@ -57,7 +57,7 @@ export class UsersComponent implements OnInit, AfterContentInit {
 
 
 nameforngonChnages:String = 'Kanishka ngonchnages'
-
+value:any =99
   //Whenever the Component is Called the Constructor is Called
   constructor() {
     //setting  this.allowNewUser=true after 3 seconds for Propery Binding

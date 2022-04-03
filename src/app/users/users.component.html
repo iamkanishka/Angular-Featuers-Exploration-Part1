@@ -201,13 +201,26 @@
  </ng-template>
 
 
+
+
+
+ <p>Demo on Custom Structural directive</p>
  <div *appAlternatengif="isDivAvailable">
     Show the div when isdivavailable is true with  appAlternatengif directive
 </div>
 <button class="btn btn-primary" (click)="isDivAvailable = !isDivAvailable"  >Toggle  alternatengif Directive </button> 
 
+<p>Demo on Switch Statement in Angular</p>
+
+<div [ngSwitch]="value">
+    <div *ngSwitchCase="10"> Value is 10</div>
+    <div *ngSwitchCase="20"> Value is 20</div>
+    <div *ngSwitchCase="30"> Value is 30</div>
+    <div *ngSwitchDefault> Value is Default</div>
+    
 
 
+</div>
  
 
 

@@ -9,7 +9,10 @@ import {FormsModule} from '@angular/forms';
 import { AddUserComponent } from './add-user/add-user.component'
 import {HightlightDirective} from './Directives/highlight.directive';
 import { RederrehighlightDirective } from './Directives/rederrehighlight.directive';
-import { AlternatengifDirective } from './Directives/alternatengif.directive'
+import { AlternatengifDirective } from './Directives/alternatengif.directive';
+import { ServiceusersComponent } from './serviceusers/serviceusers.component';
+import { ServiceaddusersComponent } from './serviceaddusers/serviceaddusers.component';
+import { ServiceuserComponent } from './Services/serviceuser/serviceuser.component'
 //Deceorator
 @NgModule({
 //Every Component has to be Registered in the Respoective
@@ -20,7 +23,10 @@ import { AlternatengifDirective } from './Directives/alternatengif.directive'
     AddUserComponent,
     HightlightDirective,
     RederrehighlightDirective,
-    AlternatengifDirective
+    AlternatengifDirective,
+    ServiceusersComponent,
+    ServiceaddusersComponent,
+    ServiceuserComponent
   ],
 //Every Component has to be Registered in the Respective
   imports: [

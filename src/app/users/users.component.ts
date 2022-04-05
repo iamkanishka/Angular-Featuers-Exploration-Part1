@@ -1,4 +1,6 @@
 import { AfterContentChecked, AfterContentInit, Component, ContentChild, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
+import { LoggingserviceService } from '../Services/loggingservice.service';
+
 import { SimpleserviceService } from '../Services/simpleservice.service';
 
 
@@ -37,6 +39,7 @@ import { SimpleserviceService } from '../Services/simpleservice.service';
 
   //Note: Shadow DOM is Replaced with Emulated
   // encapsulation:ViewEncapsulation.Emulated
+  providers:[LoggingserviceService]
 })
 export class UsersComponent implements OnInit, AfterContentInit {
   allowNewUser: Boolean = false;
@@ -60,7 +63,12 @@ export class UsersComponent implements OnInit, AfterContentInit {
 nameforngonChnages:String = 'Kanishka ngonchnages'
 value:any =99
   //Whenever the Component is Called the Constructor is Called
-  constructor(private simpleserviceService:SimpleserviceService) {
+
+  //Dependency Injection of the Services
+  constructor(
+    private simpleserviceService:SimpleserviceService,
+    private logginservice:LoggingserviceService
+    ) {
     //setting  this.allowNewUser=true after 3 seconds for Propery Binding
     setTimeout(() => {
       this.allowNewUser = true;
@@ -69,6 +77,9 @@ value:any =99
     
     //Use of Service for Unified function Usage
     this.simpleserviceService.loggingconsole(this.user)
+
+    //Accesing services through Providers
+    this. logginservice.loggingconsole(this.user)
 
     //Makeing User Status  Dynamic
     // this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'

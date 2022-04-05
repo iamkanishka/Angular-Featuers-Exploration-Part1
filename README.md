@@ -91,7 +91,8 @@ So We will be Looking These features and Learn as we go on.
 30. Create Custom Structural Directive in teh Angular using Template and ViewContainerRef 
 31. How to use ngSwitch, ngSwitchCase, ngSwitchDefault Directive in Angular
 32. Services Introdcution, Create a simple service and use service in Components in Angular
-
+33. Injecting Services into Components using Dependency Injection through Providers in the Angular
+34. 
     
 
 

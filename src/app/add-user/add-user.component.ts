@@ -1,9 +1,11 @@
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { LoggingserviceService } from '../Services/loggingservice.service';
 
 @Component({
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
-  styleUrls: ['./add-user.component.scss']
+  styleUrls: ['./add-user.component.scss'],
+  providers:[LoggingserviceService]
 })
 export class AddUserComponent implements OnInit {
   userName: string = ""
@@ -11,7 +13,9 @@ export class AddUserComponent implements OnInit {
 
   @ViewChild('userInput') userInput:any
 
-  constructor() { }
+  constructor(private loggingservice:LoggingserviceService) {
+    this.loggingservice.loggingconsole('Hi Calling from Add user Componenet')
+   }
 
   ngOnInit(): void {
   }

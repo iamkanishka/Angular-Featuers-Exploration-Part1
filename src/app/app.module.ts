@@ -16,8 +16,6 @@ import { ServiceuserComponent } from './ServiceDemo/serviceuser/serviceuser.comp
 import { UserspartoneComponent } from './userspartone/userspartone.component';
 import { LoggingserviceService } from './Services/loggingservice.service';
 import { RouterModule } from '@angular/router';
-import { RoutingfeaturemoduleModule } from './RoutingFeatures/routingfeaturemodule/routingfeaturemodule.module';
-
 
 //Deceorator
 @NgModule({
@@ -46,8 +44,6 @@ import { RoutingfeaturemoduleModule } from './RoutingFeatures/routingfeaturemodu
     //Routing Module has to be imported for using routing features
     RouterModule,
    
-    RoutingfeaturemoduleModule
-
   ],
   //integreting Highest possible Service in the Provider
   providers: [LoggingserviceService],

@@ -14,6 +14,7 @@ import { ServiceusersComponent } from './ServiceDemo/serviceusers/serviceusers.c
 import { ServiceaddusersComponent } from './ServiceDemo/serviceaddusers/serviceaddusers.component';
 import { ServiceuserComponent } from './ServiceDemo/serviceuser/serviceuser.component';
 import { UserspartoneComponent } from './userspartone/userspartone.component';
+import { LoggingserviceService } from './Services/loggingservice.service';
 
 
 //Deceorator
@@ -42,7 +43,8 @@ import { UserspartoneComponent } from './userspartone/userspartone.component';
    
 
   ],
-  providers: [],
+  //integreting Highest possible Service in the Provider
+  providers: [LoggingserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

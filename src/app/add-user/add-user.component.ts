@@ -14,7 +14,7 @@ export class AddUserComponent implements OnInit {
   @ViewChild('userInput') userInput:any
 
   constructor(private loggingservice:LoggingserviceService) {
-    this.loggingservice.loggingconsole('Hi Calling from Add user Componenet')
+    this.loggingservice.loggingConsole('Hi Calling from Add user Componenet')
    }
 
   ngOnInit(): void {

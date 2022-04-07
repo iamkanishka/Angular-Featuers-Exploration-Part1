@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggingserviceService } from 'src/app/Services/loggingservice.service';
 import { ServiceusersService } from '../../Services/serviceusers/serviceusers.service';
 
 
@@ -14,13 +15,15 @@ export class ServiceaddusersComponent implements OnInit {
 // Demo on the 
 userName!:string;
 userStatus!:string
-  constructor(private serviceusersService:ServiceusersService) { }
+  constructor(private serviceusersService:ServiceusersService,private loggingserviceService:LoggingserviceService) { }
 
   ngOnInit(): void {
   }
   onUserAdded(){
     console.log('useradded')
 this.serviceusersService.addUser(this.userName,this.userStatus)
+this.loggingserviceService.loggingStausConsole(this.userStatus)
+
   }
 
   /**

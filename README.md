@@ -94,7 +94,7 @@ So We will be Looking These features and Learn as we go on.
 33. Injecting Services into Components using Dependency Injection through Providers in the Angular
 34. Create  new Service and use the Service Data in Angular, plass Data from the serive to componenets
 35. Understand the Hierarchical Injection of the Services of Instances in the angular
-    
+36. Injecting Services into another Services, Using of @injectable decorator in tge angular    
 
     
 

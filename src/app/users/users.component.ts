@@ -79,7 +79,7 @@ value:any =99
     this.simpleserviceService.loggingconsole(this.user)
 
     //Accesing services through Providers
-    this. logginservice.loggingconsole(this.user)
+    this. logginservice.loggingConsole(this.user)
 
     //Makeing User Status  Dynamic
     // this.userStatus= Math.random() >0.5 ? 'Online' : 'Offline'

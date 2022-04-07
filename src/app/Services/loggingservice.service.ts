@@ -6,8 +6,11 @@ import { Injectable } from '@angular/core';
 export class LoggingserviceService {
 
   constructor() { }
-  loggingconsole(name:string){
+  loggingConsole(name:string){
     console.log(name)
   }
 
+  loggingStausConsole(status:string){
+    console.log('User Status'+status)
+  }
 }

@@ -26,10 +26,14 @@ export class ServiceusersService {
     this.users.push({ name, status });
   }
   updateUserstatus(index:number) {
+    console.log(index)
     if(this.users[index].status=="Active"){
-      this.users[index].status=="InActive";
+      this.users[index].status="Inactive";
+      console.log('Active check')
   }else{
-     this.users[index].status=="Active";
+     this.users[index].status="Active";
+     console.log('Inactive')
+
     }
   }
 

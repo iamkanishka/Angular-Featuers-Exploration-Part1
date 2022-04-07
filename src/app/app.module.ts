@@ -10,9 +10,12 @@ import { AddUserComponent } from './add-user/add-user.component'
 import {HightlightDirective} from './Directives/highlight.directive';
 import { RederrehighlightDirective } from './Directives/rederrehighlight.directive';
 import { AlternatengifDirective } from './Directives/alternatengif.directive';
-import { ServiceusersComponent } from './serviceusers/serviceusers.component';
-import { ServiceaddusersComponent } from './serviceaddusers/serviceaddusers.component';
-import { ServiceuserComponent } from './Services/serviceuser/serviceuser.component'
+import { ServiceusersComponent } from './ServiceDemo/serviceusers/serviceusers.component';
+import { ServiceaddusersComponent } from './ServiceDemo/serviceaddusers/serviceaddusers.component';
+import { ServiceuserComponent } from './ServiceDemo/serviceuser/serviceuser.component';
+import { UserspartoneComponent } from './userspartone/userspartone.component';
+
+
 //Deceorator
 @NgModule({
 //Every Component has to be Registered in the Respoective
@@ -26,7 +29,10 @@ import { ServiceuserComponent } from './Services/serviceuser/serviceuser.compone
     AlternatengifDirective,
     ServiceusersComponent,
     ServiceaddusersComponent,
-    ServiceuserComponent
+    ServiceuserComponent,
+    UserspartoneComponent,
+   
+    
   ],
 //Every Component has to be Registered in the Respective
   imports: [

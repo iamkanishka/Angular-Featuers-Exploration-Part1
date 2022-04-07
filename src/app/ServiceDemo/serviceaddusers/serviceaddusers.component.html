@@ -1,0 +1,15 @@
+<h4>Service Demo</h4>
+<div class="my-2">
+    <label for="userNameForOneWay"> User Name</label>
+ 
+    <input type="text" class="form-control" [(ngModel)]="userName">
+
+    <select [(ngModel)]="userStatus">
+        <option  value="Active">Active</option>
+        <option  value="InActive">InActive</option>
+
+    </select>
+
+</div>
+
+ <button class="btn btn-primary" (click)="onUserAdded()" >Add user</button> <br>

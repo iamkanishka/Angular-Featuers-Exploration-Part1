@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Importing Service Add User Compoenent -->
+            <app-serviceaddusers></app-serviceaddusers>
+        </div>
+        <div class="col-md-12">
+            <!-- Importing Serivce User Compoenent to render the user-->
+            <app-serviceuser *ngFor="let user of users;let i= index"  [user]="user" [userIndex]="i" ></app-serviceuser>
+
+        </div>
+    </div>
+</div>

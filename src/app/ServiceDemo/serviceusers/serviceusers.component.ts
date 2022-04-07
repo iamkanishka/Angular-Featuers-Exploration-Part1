@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceusersService } from '../Services/serviceusers/serviceusers.service';
+import { ServiceusersService } from '../../Services/serviceusers/serviceusers.service';
 
 @Component({
   selector: 'app-serviceusers',

@@ -1,4 +1,8 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Injectable } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+import { LoggingserviceService } from '../loggingservice.service';
+
 
 @Injectable({
   providedIn: 'root',
@@ -20,15 +24,20 @@ export class ServiceusersService {
     { name: 'Knaishka', status: 'Active' },
   ];
 
-  constructor() {}
+  statusUpdtaed = new EventEmitter<string>();
+
+  constructor(private loggingserviceService:LoggingserviceService) {}
 
   addUser(name: string, status: string) {
     this.users.push({ name, status });
+    this.loggingserviceService.loggingStausConsole(status)
+
   }
   updateUserstatus(index:number) {
     console.log(index)
     if(this.users[index].status=="Active"){
       this.users[index].status="Inactive";
+      this.statusUpdtaed.emit(this.users[index].status)
       console.log('Active check')
   }else{
      this.users[index].status="Active";

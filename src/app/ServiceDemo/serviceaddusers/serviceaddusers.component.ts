@@ -18,11 +18,17 @@ userStatus!:string
   constructor(private serviceusersService:ServiceusersService,private loggingserviceService:LoggingserviceService) { }
 
   ngOnInit(): void {
+    //Getting EventEmitted Data from the EventEmitted from the LoogingService , Event Emitter return the Observable so we need to subscribe to get the value, This can be used for the Cross componenet Communicatio  
+    this.serviceusersService.statusUpdtaed.subscribe((response)=>{
+      console.log(response)
+      
+      alert(response)
+    })
   }
   onUserAdded(){
     console.log('useradded')
 this.serviceusersService.addUser(this.userName,this.userStatus)
-this.loggingserviceService.loggingStausConsole(this.userStatus)
+
 
   }
 

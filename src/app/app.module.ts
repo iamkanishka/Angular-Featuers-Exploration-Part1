@@ -15,6 +15,8 @@ import { ServiceaddusersComponent } from './ServiceDemo/serviceaddusers/servicea
 import { ServiceuserComponent } from './ServiceDemo/serviceuser/serviceuser.component';
 import { UserspartoneComponent } from './userspartone/userspartone.component';
 import { LoggingserviceService } from './Services/loggingservice.service';
+import { RouterModule } from '@angular/router';
+import { RoutingfeaturemoduleModule } from './RoutingFeatures/routingfeaturemodule/routingfeaturemodule.module';
 
 
 //Deceorator
@@ -32,6 +34,7 @@ import { LoggingserviceService } from './Services/loggingservice.service';
     ServiceaddusersComponent,
     ServiceuserComponent,
     UserspartoneComponent,
+
    
     
   ],
@@ -40,7 +43,10 @@ import { LoggingserviceService } from './Services/loggingservice.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    //Routing Module has to be imported for using routing features
+    RouterModule,
    
+    RoutingfeaturemoduleModule
 
   ],
   //integreting Highest possible Service in the Provider

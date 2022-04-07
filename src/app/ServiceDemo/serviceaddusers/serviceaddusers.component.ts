@@ -6,6 +6,8 @@ import { ServiceusersService } from '../../Services/serviceusers/serviceusers.se
   selector: 'app-serviceaddusers',
   templateUrl: './serviceaddusers.component.html',
   styleUrls: ['./serviceaddusers.component.scss'],
+//providers:[ServiceusersService]
+//unified instance of  ServiceusersService has been provided in the AppComponent
 
 })
 export class ServiceaddusersComponent implements OnInit {
